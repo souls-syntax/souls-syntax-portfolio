@@ -1,0 +1,234 @@
+:root{
+    --bg: #222237;
+    --text: #c0caf5;
+    --accent: #7aa2f7;
+    --green: #9ece6a;
+    --purple: #bb9af7;
+    --font: 'Fira Code', monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--accent);
+}
+
+a{
+    color: var(--purple);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header{
+    background-color: #1a1b2e;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+#hero {
+    padding: 6rem 2rem;
+    text-align: centre;
+}
+
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p{
+    font-size: 1.5rem;
+    color: var(--green)
+}
+
+section{
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--purple);
+}
+
+
+
+#about {
+    background-color: #1f1f3a;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#about h2{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--purple);
+    margin-bottom: 2rem;
+}
+
+#about p{
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.05;
+    color: #c0caf5;
+}
+
+#about p{
+    border-left: 2px solid var(--accent);
+    padding-left: 1rem;
+}
+
+#projects {
+    padding: 4rem 2rem;
+    background-color: #1a1b2e;
+    border-radius: 1rem;
+}
+
+.project-container {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.project-card{
+    background-color: #2a2b45;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 280px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2sec ease;
+}
+
+.project-card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(122,162,247,0.6);
+}
+
+.project-card h3{
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.project-card .tech {
+    color: var(--green);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-card a{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background-color: var(--accent);
+    color: #000;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.project-card a:hover{
+    background-color: var(--purple);
+    color: white;
+}
+
+
+#contact {
+    padding: 4rem 2rem;
+    background-color: #1f1f3a;
+    border-radius: 1rem;
+    text-align:center;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #c0caf5;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li{
+    margin: 0.5rem 0;
+}
+
+#contact a{
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover{
+    color: var(--purple);
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    #hero h1{
+        font-size: 2rem;
+    }
+
+    .project-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card{
+        width: 90%;
+
+    }
+    section{
+        padding: 2rem 1rem;
+    }
+}
