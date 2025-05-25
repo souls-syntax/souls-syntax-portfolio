@@ -282,7 +282,7 @@ footer{
     transition: background-color 0.3s;
 }
 
-#contact-form button:hover {
-    background-color: #9aa5ce;
+#contact #contact-form button:hover {
+    background-color: var(--green);
 }
 
