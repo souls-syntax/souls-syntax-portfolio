@@ -2,8 +2,19 @@
 <html>
     <head>
         <title>souls-syntax Portfolio</title>
+        <!-- Links section starts -->
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("1EDsDmJfKOvLfx5BT");
+            })();
+        </script>
+
+        <!-- Links section ends -->
+
+        <!-- Meta section starts -->
         <meta name="description" content="Souls.Syntax - Portfolio of Aakarsh Kashyap , Systems-level developer , AI enthusiast and Researcher">
         <meta name="keyword" content="Aakarsh, Kashyap, Portfolio, portfolio, system developer, machine learning, souls syntax">
         <meta name="author" content="Aakarsh Kashyap">
@@ -11,6 +22,7 @@
         <meta property="og:title" content="Souls.Syntax - Portfolio">
         <meta property="og:description" content="Crafting intelligent system. Exploring the edge of code and cognition">
         <meta property="og:url" content="https://souls-syntax.github.io/souls-syntax-portfolio/">
+        <!-- Meta section ends -->
     </head>
     <body>
         <header>
@@ -66,18 +78,24 @@
             <h2>Resume</h2>
             <a href="My_resume_placeholder.pdf" download>Download Resume (PDF) </a>
         </section>
-
+    <script src="script.js"></script>
         <section id="contact">
             <h2>Contact</h2>
             <p>Feel free to reach out for research opportunity, collaborations, or just a tech chat</p>
+
             <ul>
                 <li>Email: souls.syntax@gmail.com</li>
                 <li>Reddit: u/souls-syntax</li>
                 <li><a href="https://github.com/souls-syntax" target="_blank">GitHub</a></li>
                 <li><a href="www.linkedin.com/in/souls-syntax" target="_blank">linkedin</a></li>
-
-                
             </ul>
+
+            <form id="contact-form">
+                <input type="text" name="from_name" placeholder="Your Name" required>
+                <input type="email" name="from_email" placeholder="Your Email" required>
+                <textarea name="from_message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
 
         <footer>
